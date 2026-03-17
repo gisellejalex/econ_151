@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECON 151 Study Tool</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      :root {
+        --color-text-primary: #1a1a1a;
+        --color-text-secondary: #6b6b6b;
+        --color-text-tertiary: #999;
+        --color-background-primary: #fff;
+        --color-background-secondary: #f8f8f6;
+        --color-border-tertiary: rgba(0,0,0,0.12);
+        --font-sans: 'Times New Roman', Georgia, serif;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-text-primary: #e8e8e0;
+          --color-text-secondary: #9a9a8e;
+          --color-text-tertiary: #6b6b60;
+          --color-background-primary: #1a1a18;
+          --color-background-secondary: #242422;
+          --color-border-tertiary: rgba(255,255,255,0.12);
+        }
+      }
+      body {
+        font-family: 'Times New Roman', Georgia, serif;
+        background: var(--color-background-secondary);
+        color: var(--color-text-primary);
+        min-height: 100vh;
+        padding: 16px;
+      }
+      button { font-family: inherit; }
+      input { font-family: inherit; background: var(--color-background-primary); color: var(--color-text-primary); }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
